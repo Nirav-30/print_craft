@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!-- saved from url=(0038)http://localhost/print_craft/cart.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shopping Cart - Print Craft</title>
+
+    <link rel="stylesheet" href="./Shopping Cart - Print Craft_files/style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Print Craft</h1>
+
+    <nav>
+        <a href="http://localhost/print_craft/index.html">Home</a>
+        <a href="http://localhost/print_craft/index.html#products">Products</a>
+        <a href="http://localhost/print_craft/cart.html">Cart 🛒</a>
+    </nav>
+</header>
+
+
+<main>
+
+    <section class="cart-section">
+
+        <h2>Shopping Cart</h2>
+
+        <div id="cart-items">
+
+            <div class="cart-item">
+
+                <div>
+                    <h3>Custom Sweatshirt</h3>
+
+                    <p>Price: ₹799</p>
+
+                    <p>
+                        Quantity:
+                        <button onclick="changeQuantity(0, -1)">
+                            -
+                        </button>
+
+                        <span>2</span>
+
+                        <button onclick="changeQuantity(0, 1)">
+                            +
+                        </button>
+                    </p>
+
+                    <p>
+                        Subtotal: ₹1598
+                    </p>
+
+                    <button onclick="removeFromCart(0)">
+                        Remove
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="cart-summary">
+
+            <h3>
+                Total:
+                ₹<span id="cart-total">1598.00</span>
+            </h3>
+
+            <button onclick="checkout()">
+                Proceed to Checkout
+            </button>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<script src="./Shopping Cart - Print Craft_files/script.js.download"></script>
+
+<script>
+    displayCart();
+</script>
+
+
+</body></html>
